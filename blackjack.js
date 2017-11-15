@@ -4,15 +4,28 @@ function blackJack(){
   console.log(userValue);
   console.log(computerValue);
 
-  var pushUserValueIntoTable = '<td class="border border-dark">' + userValue + '</td>';
-  var pushComputerValueIntoTable = '<td class="border border-dark">'+ computerValue + '</td>';
-  document.getElementById('stats').innerHTML += pushUserValueIntoTable;
-  document.getElementById('stats').innerHTML += pushComputerValueIntoTable;
-console.log(pushUserValueIntoTable);
+
+
+  console.log(pushStartTableLine);
+  console.log(pushUserValueIntoTable);
+  console.log(pushComputerValueIntoTable);
+  console.log(pushEndTableLine);
+
   if (computerValue < userValue){
+    var result = 'Victoire';
     document.getElementById('result').innerHTML = 'Vous avez gagné';
   } else {
+    var result = 'Défaite'
     document.getElementById('result').innerHTML = 'Vous avez perdu';
   }
+
+  var pushStartTableLine = '<tr class="border border-dark">';
+  var pushUserValueIntoTable = '<td class="border border-dark p-1">' + userValue + '</td>';
+  var pushComputerValueIntoTable = '<td class="border border-dark p-1">' + computerValue + '</td>';
+  var pushResult = '<td class="border border-dark p-1">' + result + '</td>';
+  var pushEndTableLine = '</tr>';
+  document.getElementById('pushIntoTable').innerHTML += pushStartTableLine;
+  document.getElementById('pushIntoTable').innerHTML += pushUserValueIntoTable + pushComputerValueIntoTable + pushResult;
+  document.getElementById('pushIntoTable').innerHTML += pushEndTableLine;
 
 }
