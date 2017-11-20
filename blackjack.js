@@ -43,12 +43,13 @@ var totalComputerValue = computerValue + addComputerValue;
 
 function blackJack(){
 
-  document.getElementById('userValue').innerHTML = 'Votre Chiffre : ' + userValue;
-
   var btnAdd = '<input class="mt-2" id="btnAdd" type="button" value="Ajouter" onClick="add(); return false;">';
   var btnStop = '<input class="mt-2 ml-2" id="btnStop" type="button" value="Arrêter" onClick="stop(); return false;">';
 
-  document.getElementById('blackJack').innerHTML += btnAdd + btnStop;
+
+  document.getElementById('blackJack').innerHTML = '<span class="d-block mt-2" id="userValue"></span><span class="d-block mt-2" id="computerValue"></span><span class="d-block mt-2" id="result"></span>' + btnAdd + btnStop;
+  document.getElementById('userValue').innerHTML += 'Votre Chiffre : ' + userValue;
+
 
 }
 
