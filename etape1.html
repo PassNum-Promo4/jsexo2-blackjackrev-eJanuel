@@ -5,34 +5,35 @@
     <link rel=stylesheet href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <script type="text/javascript" src="blackjack.js"></script>
     <meta charset="UTF-8">
-    <title>Pigeon.org</title>
+    <title>BlackJackRev</title>
   </head>
   <body>
     <header class="row align-items-center bg-light text-dark container-fluid m-0 p-0">
-      <img src="img/pigeon.png" alt="logo" class="col-2 p-4">
       <div class="col-6">
-        <h1 class="text-center">Pigeon.org</h1>
+        <h1 class="text-center">BlackJack Revisité</h1>
       </div>
       <div class="col-4">
         <nav class="nav nav-pills nav-justified justify-content-end">
-          <a class="nav-link active" href="#">BlackJack</a>
-          <!--<a class="nav-link" href="#"></a>-->
+          <a class="nav-link active" href="etape1.html">BlackJackRev</a>
+          <a class="nav-link" href="etape2.html">BlackJack</a>
         </nav>
       </div>
     </header>
     <div class="row container-fluid">
-      <div class="border border-dark container-fluid mt-5 col-6">
-        <form id="blackJack" method="get" onSubmit="blackJack(); return false;">
+      <div class="container-fluid mt-5 col-5">
+        <form class="" id="blackJackRev" method="get" onSubmit="blackJackRev(); return false;">
           <span>Entrez un nombre entre 0 et 10</span>
-          <input id="userValue" type="number" min="1" max="10">
+          <input id="userValueRev" type="number" min="1" max="10"></input>
           <input type="submit" value="Je tente ma chance">
+          <br>
           <input type="checkbox" id="agree">
           <label for="agree">J'accepte les <a href="https://fr.wikipedia.org/wiki/Conditions_g%C3%A9n%C3%A9rales_d%27utilisation">CGU</a></label>
+          <br>
           <span id="result">Résultat : </span>
         </form>
       </div>
 
-      <div class="border border-dark col-6">
+      <div class="container-fluid col-5 mt-5">
         <table id="pushIntoTable" class="border border-dark">
           <tr class="border border-dark">
             <td class="border border-dark p-1">Nombre Utilisateur</td>
@@ -46,7 +47,7 @@
     </div>
 
     <footer class="container-fluid row align-items-center">
-      <span class="col-12">Jouer comporte des risques, Endettement, Dépendance, Isolement, pour être aidés, allez voir ailleurs !</span>
+      <!--<span class="col-12">Jouer comporte des risques, Endettement, Dépendance, Isolement, pour être aidés, allez voir ailleurs !</span>-->
     </footer>
   </body>
 </html>

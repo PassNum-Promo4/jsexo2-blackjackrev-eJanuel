@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel=stylesheet href="master.css">
+    <link rel=stylesheet href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <script type="text/javascript" src="blackjack.js"></script>
+    <meta charset="UTF-8">
+    <title>BlackJack</title>
+  </head>
+  <body>
+    <header class="row align-items-center bg-light text-dark container-fluid m-0 p-0">
+      <div class="col-6">
+        <h1 class="text-center">BlackJack</h1>
+      </div>
+      <div class="col-4">
+        <nav class="nav nav-pills nav-justified justify-content-end">
+          <a class="nav-link" href="etape1.html">BlackJackRev</a>
+          <a class="nav-link active" href="etape2.html">BlackJack</a>
+        </nav>
+      </div>
+    </header>
+    <div class="row container-fluid">
+      <div class="container-fluid mt-5 col-5">
+        <form class="" id="blackJack" method="get" onSubmit="blackJack(); return false;">
+          <input type="submit" value="Je tente ma chance">
+          <span class="d-block mt-2" id="userValue"></span>
+          <span class="d-block mt-2" id="computerValue"></span>
+          <span class="d-block mt-2" id="result"></span>
+
+          <!--<input type="checkbox" id="agree">
+          <label for="agree">J'accepte les <a href="https://fr.wikipedia.org/wiki/Conditions_g%C3%A9n%C3%A9rales_d%27utilisation">CGU</a></label>-->
+        </form>
+      </div>
+    </div>
+
+    <footer class="container-fluid row align-items-center">
+      <!--<span class="col-12">Jouer comporte des risques, Endettement, Dépendance, Isolement, pour être aidés, allez voir ailleurs !</span>-->
+    </footer>
+  </body>
+</html>
