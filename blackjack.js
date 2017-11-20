@@ -73,9 +73,9 @@ function add(){
 
   if (totalUserValue > 21){
     var result = 'Défaite';}
-  if (totalUserValue > totalComputerValue || totalUserValue < 21){
+  if (totalUserValue > totalComputerValue || totalUserValue <= 21){
     var result = 'Victoire';}
-  if (totalComputerValue > totalUserValue && totalComputerValue < 21){
+  if (totalComputerValue > totalUserValue && totalComputerValue =< 21){
     var result = 'Défaite';}
 
   console.log('result : ' + result);
